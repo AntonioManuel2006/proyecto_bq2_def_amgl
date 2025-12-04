@@ -158,7 +158,7 @@
 
         randomBtn.addEventListener('click', getRandomCocktail);
 
-        
+        //getRandomCocktail(API_BASE);
 
                 const toggle = document.getElementById("theme-toggle");
 
