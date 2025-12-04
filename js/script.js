@@ -172,6 +172,8 @@
             document.documentElement.style.setProperty("--secondary", "#4ecdc4");
             document.documentElement.style.setProperty("--footer-color", "#f0f0f0");
             document.documentElement.style.setProperty("--footer-bg", "#0a0a0aff");
+            document.documentElement.style.setProperty("--boton-search-bg", "#0a0a0a");
+            document.documentElement.style.setProperty("--boton-random-font", "#f5f5f5");
             document.body.style.backgroundColor = "#0a0a0a";
           } else {
             document.documentElement.style.setProperty("--darker", "#0a0a0aff");
@@ -181,6 +183,8 @@
             document.documentElement.style.setProperty("--font-light", "#070707");
             document.documentElement.style.setProperty("--footer-color", "#000000ff");
             document.documentElement.style.setProperty("--footer-bg", "#f0f0f0f0");
+            document.documentElement.style.setProperty("--boton-search-bg", "#d0e8f2");
+            document.documentElement.style.setProperty("--boton-random-font", "#070707");
             document.body.style.backgroundColor = "#e8f4f8";
           }
         });

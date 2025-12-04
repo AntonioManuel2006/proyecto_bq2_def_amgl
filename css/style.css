@@ -17,6 +17,8 @@
             --font-light: #070707;
             --footer-color: #080808;
             --footer-bg: #f0f0f0;
+            --boton-search-bg: #667eea;
+            --boton-random-font: #eff1f1;
 
         }
 
@@ -178,8 +180,8 @@ nav a:hover {
         }
 
         .btn-random {
-            background: var(--background-light);
-            color: var(--dark);
+            background: var(--boton-search-bg);
+            color: var(--boton-random-font);
         }
 
         .btn-random:hover {
