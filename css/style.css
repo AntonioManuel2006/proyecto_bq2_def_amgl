@@ -62,6 +62,8 @@
             flex-direction: column;
             cursor: pointer;
             gap: 5px;
+            color: var(--font-light);
+            background-color: var(--footer-bg);
         }
 
         .hamburger span {
@@ -176,7 +178,7 @@ nav a:hover {
         }
 
         .btn-random {
-            background: var(--secondary);
+            background: var(--background-light);
             color: var(--dark);
         }
 
@@ -364,51 +366,43 @@ nav a:hover {
             }
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
+        /* Pantallas grandes (por defecto) */
+.hamburger {
+  display: none; /* ocultar hamburguesa */
+}
 
-            nav ul {
-                position: fixed;
-                top: 70px;
-                right: -100%;
-                width: 70%;
-                height: calc(100vh - 70px);
-                background: var(--dark);
-                flex-direction: column;
-                padding: 2rem;
-                transition: right 0.3s ease;
-                box-shadow: -5px 0 20px rgba(0,0,0,0.3);
-            }
+nav ul {
+  display: flex; /* mostrar menú normal */
+  gap: 20px;
+  position: static; /* quitar posición fija */
+  flex-direction: row;
+  background: none;
+  box-shadow: none;
+}
 
-            nav ul.active {
-                right: 0;
-            }
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* mostrar hamburguesa */
+  }
 
-            .hero h1 {
-                font-size: 2rem;
-            }
+  nav ul {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 70%;
+    height: calc(100vh - 70px);
+    background: var(--dark);
+    flex-direction: column;
+    padding: 2rem;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.3);
+  }
 
-            .search-box {
-                flex-direction: column;
-            }
-
-            #results {
-                grid-template-columns: 1fr;
-            }
-
-            .modal-content {
-                width: 95%;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            #results {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+  nav ul.active {
+    right: 0;
+  }
+}
 
 
 .ui-switch {
